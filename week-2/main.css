@@ -1,0 +1,197 @@
+
+h1 {
+    font-family: Trattatello, 'Courier New', Courier,
+    font-size: 70px;
+    color: #F2FCFF;
+    background-color: #507DBC;
+    padding: 15px;
+
+ }
+
+ h2 {
+    background-color:#011936;
+    color: #F2FCFF;
+    padding: 10px;
+ }
+body {
+    font-family:'Courier New', Courier, monospace;
+    color: #284b63;
+    font-weight: 400;
+    background-color: #BBD1EA;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+
+.grid-item {
+    background-color: #F2FCFF;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #011936;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+/****** GRID FLOATS*******/
+
+  #grid-floats .grid-item {
+
+      float: left;
+      width: 43%;
+      height: 30em;
+      padding: 2%;
+      margin: 1%;
+      overflow: auto;
+
+}
+
+#grid-floats > li:nth-child(1) {
+      width: 88%;
+    }
+
+h2 {
+    clear: both;
+}
+
+/****** GRID FLEX*******/
+
+#grid-flex {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+
+
+#grid-flex > .grid-item {
+
+  width: 46%;
+  margin: 2%;
+
+}
+
+#grid-flex > li:nth-child(1){
+    flex-basis: 92%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+/****** GRID FLOATS*******/
+
+  #grid-floats .grid-item {
+      float: left;
+      width: 30%;
+      height: 30em;
+      padding: 1em;
+      margin: 1%;
+      overflow: auto;
+}
+
+#grid-floats > li:nth-child(1) {
+      width: 43%;
+      margin-left: 4%;
+    }
+
+#grid-floats > li:nth-child(2) {
+          width: 43%;
+        }
+
+h2 {
+    clear: both;
+}
+
+/******* GRID FLEX******/
+
+#grid-flex {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+
+
+#grid-flex > .grid-item {
+
+  width: 29%;
+  margin: 2%;
+  padding: 1%;
+}
+
+#grid-flex > li:nth-child(1){
+    flex-basis: 45%;
+  }
+  #grid-flex > li:nth-child(2){
+      flex-basis: 45%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+/****** GRID FLOATS*******/
+
+    #grid-floats .grid-item {
+        float: left;
+        width: 22%;
+        height: 30em;
+        padding: 1em;
+        margin: 1%;
+        overflow: auto;
+  }
+
+  #grid-floats > li:nth-child(1) {
+        width: 30%;
+        margin-left: 1%;
+        }
+
+  #grid-floats > li:nth-child(2) {
+            width: 30%;
+          }
+
+  #grid-floats > li:nth-child(3) {
+            width: 30%;
+          }
+
+  h2 {
+      clear: both;
+  }
+
+  /***** GRID FLEX******/
+
+  #grid-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  }
+
+
+  #grid-flex > .grid-item {
+
+    width: 21%;
+    margin: 1%;
+    padding: 1%;
+
+  }
+
+    #grid-flex > li:nth-child(1){
+      flex-basis: 31%;
+    }
+    #grid-flex > li:nth-child(2){
+      flex-basis: 31%;
+    }
+    #grid-flex > li:nth-child(3){
+      flex-basis: 31%;
+    }
+}
